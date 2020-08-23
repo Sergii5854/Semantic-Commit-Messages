@@ -1,0 +1,33 @@
+# EXAMPLE USAGE
+# Refer for explanation to following link:
+# https://github.com/Arkweid/lefthook/blob/master/docs/full_guide.md
+
+commit-msg:
+    commands:
+        lint-commit:
+            run: commitlint -e
+
+pre-commit:
+    parallel: true
+    commands:
+        format:
+            tags: code style
+            glob: '*.{js,ts,tsx,json,yml,yaml,md}'
+            run: prettier --write {staged_files}
+        lint:
+            tags: code style
+            glob: '*.{js,ts,tsx}'
+            run: eslint --fix {staged_files}
+        # test:
+        #   tags: code quality
+        #   glob: '*.{js,ts,tsx}'
+        #   run: jest -b --findRelatedTests {staged_files}
+
+pre-push:
+    commands:
+        test:
+            tags: code quality
+            run: yarn run test:test
+    scripts:
+        'script.js':
+            runner: node
