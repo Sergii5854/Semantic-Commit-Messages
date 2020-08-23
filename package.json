@@ -4,7 +4,12 @@
   "description": "Let's explain the Semantic Commits term and demonstrate practical examples of commit messages, inspired by the Conventional Commit specification",
   "main": "index.js",
   "scripts": {
-    "commit": "git-cz "
+    "commit": "git add . && git-cz && git push",
+    "eslint": "eslint",
+    "eslint-fix": "eslint --fix",
+    "prettier-check": "prettier --check",
+    "prettier-fix": "prettier --write",
+    "test": "echo tast "
   },
   "repository": {
     "type": "git",
@@ -16,7 +21,10 @@
     "@commitlint/config-conventional": "8.3.4",
     "commitizen": "^4.1.2",
     "cz-conventional-changelog": "^3.2.0",
-    "cz-customizable": "^6.3.0"
+    "cz-customizable": "^6.3.0",
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "prettier": "^2.0.5"
   },
   "keywords": [
     "git",
