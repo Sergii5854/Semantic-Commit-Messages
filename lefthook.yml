@@ -27,7 +27,7 @@ pre-push:
     commands:
         test:
             tags: code quality
-            run: yarn run test:test
+            run: yarn run test
     scripts:
         'script.js':
             runner: node
