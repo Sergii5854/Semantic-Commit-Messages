@@ -1,5 +1,6 @@
 # Semantic-Commit-Messages
-Let's explain the Semantic Commits term and demonstrate practical examples of commit messages, inspired by the Conventional Commit specification 
+
+Let's explain the Semantic Commits term and demonstrate practical examples of commit messages, inspired by the Conventional Commit specification
 
 ###Commit
 [Understanding Semantic Commit Messages Using Git and Angular](https://nitayneeman.com/posts/understanding-semantic-commit-messages-using-git-and-angular/)
@@ -7,11 +8,10 @@ Let's explain the Semantic Commits term and demonstrate practical examples of co
 [Commit Message Emoji](https://gist.github.com/parmentf/035de27d6ed1dce0b36a) Example table of commit type and emoji.
 
 ## Code review (peer review)
-[Great concept of conventional comments.]( https://conventionalcomments.org/) 
+
+[Great concept of conventional comments.](https://conventionalcomments.org/)
 
 #### Comments that are easy to grok and grep.
-
-# Semantic Commit Messages
 
 See how a minor change to your commit message style can make you a better programmer.
 
